@@ -1,0 +1,6 @@
+Laurynui:
+  Persirašyti visą HTML turinį, pagal šiame aplanke esantį pavyzdį
+
+Orestui ir Severinui:
+  Peržiūrėti ir PASIDARYTI ATSKIRAME APLANKE šį video:
+    https://www.youtube.com/watch?v=XiQ9rjaa2Ow&ab_channel=codeSTACKr
