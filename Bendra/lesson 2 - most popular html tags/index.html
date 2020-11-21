@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 2 - most popular HTML tags</title>
+</head>
+
+<body>
+  <main>
+    <h1>Most popular HTML elements</h1>
+    <p>
+      There are many HTML elements (<em>also known as HTML tags</em>), but not all of them are commonly used.
+      We will run through most common ones, and shortly describe what are their use cases.
+    </p>
+  </main>
+
+  <section>
+    <!-- We add font size for better representation, because it is artificialy reduced, when used more than once. -->
+    <h1 style="font-size: 2em">1'st size heading</h1>
+    <h2>2'nd size heading</h2>
+    <h3>3'rd size heading</h3>
+    <h4>4'th size heading</h4>
+    <h5>5'th size heading</h5>
+    <h6>6'th size heading</h6>
+    <p>
+      <strong>h1, h2, h3, h4, h5, h6</strong> tags are used for headings. The <strong>h1</strong> is the largest,
+      and should be used to describe the main purpose of the page. For better Search Engine Optimization (SEO)
+      you should only use a single <strong>h1</strong> tag. <br><br> <!-- br: break-->
+
+      <strong>h2 tags are mostly used for section naming.</strong><br>
+      <strong>h3 tags are used for articles, posts and other page components headings</strong><br>
+      <strong>h4 - h6 tags are sub-headers</strong><br><br>
+
+      In page structure, heading tags should always be used ascendingly. You can't skip header size.
+      Skipping a heading size, like : h1->h3 is a very bad practice, becouse SEO can't validate your page content
+      properly.
+    </p>
+  </section>
+
+  <section>
+    <h2>Most common block elements</h2>
+    <p>
+      <strong>Block elements</strong> are mostly used as containers for other HTML elements. Their purpose is to suggest
+      and describe content within them, most common are:
+    <ul>
+      <li>header - used for navbars, card headers, any block elements that represent the describing part of a component
+      </li>
+      <li>section - used to describe one of many page sections</li>
+      <li>main - used for the main page section, which is the whole purpose of the page</li>
+      <li>article - post, article, or any self contained component</li>
+      <li>aside - used for sidebars, or any content which is on a side of a main page content</li>
+      <li>footer - used for page footers. Footers are mostly used to contacts, copyrights and page links</li>
+      <li>div - for any other purposes. This element has no special meaning. It is also a default HTML element</li>
+    </ul>
+    </p>
+  </section>
+
+  <section>
+    <h2>Lists</h2>
+    <article>
+      <h3>ul - unordered list</h3>
+      <p>
+        It is the most popular list. It is used for any general use lists. Although <strong>ul</strong> tag has some
+        default
+        styling, it is prefered by SEO to have common purpose components in a list. We can alter the style using CSS
+        styles.
+      </p>
+      <div>
+        <h4>Things to do</h4>
+        <ul>
+          <li>Learn HTML structure</li>
+          <li>Learn HTML elements</li>
+          <li>Learn CSS styling</li>
+          <li>Learn JavaScript</li>
+          <li>...</li>
+        </ul>
+      </div>
+    </article>
+
+    <article>
+      <h3>ol - ordered list</h3>
+      <p>
+        You should use <strong>ol</strong> tag only when the order of list items are important. Same as for
+        <strong>ul</strong>
+        elements, you can change the style with CSS later.
+      </p>
+      <div>
+        <h4>Skying championship 2020</h4>
+        <ol>
+          <li>Steve Lampart</li>
+          <li>Oscar Dweight</li>
+          <li>Souver Linkingman</li>
+        </ol>
+      </div>
+    </article>
+  </section>
+
+  <section>
+    <h2>Fun part - media tags</h2>
+    <article>
+      <h3>Images</h3>
+      <p>
+        You can upload images to your page by using CSS, or using <strong>&lt;img&gt;</strong>. When using
+        <strong>img</strong> tag you have to set up several attributes;
+      </p>
+      <ul>
+        <li>src - the path to the image which should be loaded</li>
+        <li>alt - text, which will be shown if image is not found by the <strong>src</strong> attribute</li>
+        <li>height - sets image height. Width is changed respectively by the image width to heigth ratio</li>
+        <li>width - sets image width. Height is changed respectively by the image width to heigth ratio</li>
+      </ul>
+      <strong>IMPORTANT! </strong>If both, height and width is specified, then image could get streched
+      <div>
+        <h4>Using images by url path</h4>
+        <img
+          src="https://photoresources.wtatennis.com/photo-resources/2019/08/15/dbb59626-9254-4426-915e-57397b6d6635/tennis-origins-e1444901660593.jpg?width=1024&height=512"
+          alt="Tennis racket and yellow" height="150px"> <!-- img is a self closing tag. It does not have a closing tag-->
+        <img src="https://static-01.daraz.pk/p/8fbd1fa7130082cbcd5b5ebaed49ef26.jpg"
+          alt="Football ball is also protected against COVID-19" width="300px">
+        <img
+          src="https://res-5.cloudinary.com/russell-corp-australia-pty-ltd/image/upload/c_limit,dpr_2.0,f_auto,h_950,q_auto,w_950/media/catalog/product/5/1/5167_tf-250_s1.jpg"
+          alt="Basketball ball" height="200px" width="300px">
+      </div>
+    </article>
+  </section>
+
+  <section>
+    <h2>Links - anchor tags</h2>
+    <p>
+      Links are elements, that can navigate you to a certain page section, or a different page. <br><br>
+      You can write <strong>target="blank"</strong> attribute for the link to open in new tab, without it, link will be
+      loaded in the same tab. 
+    </p>
+    <a href="https://youtube.com">Youtube in same tab</a>
+    <a href="https://youtube.com" target="blank">Youtube in new tab</a>
+  </section>
+
+
+
+</body>
+
+</html>
