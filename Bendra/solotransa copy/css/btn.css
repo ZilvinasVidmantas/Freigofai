@@ -16,12 +16,12 @@
 }
 
 .btn--blue {
-  background: #3742fa;
+  background: var(--primary);
   box-shadow: 6px 6px 12px rgb(55 66 250 / 20%), -4px 6px 12px rgb(55 66 250 / 20%);
 }
 
 .btn--blue:after {
-  background: #0612df;
+  background: var(--primary-dark);
 }
 
 .btn:hover:after {

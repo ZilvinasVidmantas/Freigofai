@@ -1,5 +1,9 @@
 .container {
   padding: 0 1rem;
-  margin-left: auto;
-  margin-right: auto;
+  width: 1600px;
+  margin: auto;
+}
+
+.page-indent-left {
+  margin-left: 200px;
 }

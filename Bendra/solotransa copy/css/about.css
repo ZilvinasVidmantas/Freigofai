@@ -1,0 +1,37 @@
+.about {
+  background-color: var(--bg-grey);
+  padding: 75px 0;
+}
+
+.about__content {
+  display: flex;
+  justify-items: stretch;
+  height: 700px;
+}
+
+.about__text {
+  padding: 0 50px 30px 0;
+}
+
+.about__image {
+  width: 650px;
+}
+
+.about__countries {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  user-select: none;
+}
+
+.about__countries>li {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--font-color-grey);
+}
+
+.about__countries>li:hover {
+  color: var(--primary);
+  text-shadow: 0 0 1px var(--primary);
+  cursor: default;
+}

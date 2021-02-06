@@ -35,8 +35,7 @@
 }
 
 .navbar__menu-item.active {
-  color: #3742fa;
-  ;
+  color: var(--primary);
 }
 
 .navbar__menu-item:hover {
@@ -52,7 +51,7 @@
   height: 3px;
   width: 20px;
   transition: width .6s;
-  background-color: #3742fa;
+  background-color: var(--primary);
 }
 
 .navbar__menu-item:hover+.navbar__hover-bar {

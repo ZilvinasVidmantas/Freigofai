@@ -11,11 +11,7 @@
   align-items: center;
 }
 
-.hero__content {
-  margin-left: 300px
-}
-
-.hero__text{
-  width: 40%;
+.hero__text {
+  width: 400px;
   padding-bottom: 30px;
 }
