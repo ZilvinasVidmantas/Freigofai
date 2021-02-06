@@ -1,0 +1,29 @@
+.btn{
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 0 15px 35px;
+  border-radius: 2px;
+}
+
+.btn:after {
+  position: relative;
+  left: 0;
+  margin-left: 35px;
+  padding: 15px;
+  content: url(../img/arrow-point-right-white.svg);
+  transition: all .3s ease-in-out;
+}
+
+.btn--blue {
+  background: #3742fa;
+  box-shadow: 6px 6px 12px rgb(55 66 250 / 20%), -4px 6px 12px rgb(55 66 250 / 20%);
+}
+
+.btn--blue:after {
+  background: #0612df;
+}
+
+.btn:hover:after {
+  left: 10px;
+}

@@ -1,0 +1,21 @@
+.hero {
+  height: 100vh;
+}
+
+.hero__background {
+  height: 100%;
+  background-image: url(../img/hero.png);
+  background-position: center right;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.hero__content {
+  margin-left: 300px
+}
+
+.hero__text{
+  width: 40%;
+  padding-bottom: 30px;
+}
