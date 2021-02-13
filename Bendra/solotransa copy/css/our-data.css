@@ -1,0 +1,11 @@
+.our-data__info {
+  position: relative;
+  width: 40%;
+}
+
+.our-data__stats{
+  margin:  100px auto 200px;
+  width: 900px;
+  height: 440px;
+  border: 1px solid rgb(219, 224, 233);
+}

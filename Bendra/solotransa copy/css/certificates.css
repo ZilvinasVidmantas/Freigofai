@@ -1,0 +1,27 @@
+.certificates {
+  position: relative;
+  padding: 80px 0;
+  min-height: 70vh;
+}
+
+.certificates__info{
+  width: 40%;
+}
+
+.certificates__card-container {
+  margin-top: 3rem;
+  padding: 1rem 0;
+  display: flex;
+}
+
+.certificates__card {
+  background-color: var(--white); 
+  width: 260px;
+  padding: 16px 20px;
+  margin-right: 50px;
+  box-shadow: 2px 6px 10px 1px rgb(47 53 66 / 20%), -2px 0 10px 1px rgb(47 53 66 / 20%);
+}
+
+.certificates__card>img {
+  width: 100%;
+}
