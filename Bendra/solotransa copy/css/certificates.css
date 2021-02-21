@@ -1,7 +1,7 @@
 .certificates {
   position: relative;
-  padding: 80px 0;
-  min-height: 70vh;
+  height: 100vh;
+  margin-bottom: 150px;
 }
 
 .certificates__info{

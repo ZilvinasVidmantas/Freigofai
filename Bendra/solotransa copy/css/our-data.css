@@ -1,11 +1,29 @@
+.our-data {
+  position: relative;
+  height: 310px;
+  z-index: 100;
+}
+
+.our-data>.container {
+  position: relative;
+  top: -300px;
+}
+
 .our-data__info {
   position: relative;
   width: 40%;
 }
 
-.our-data__stats{
-  margin:  100px auto 200px;
-  width: 900px;
-  height: 440px;
+.our-data__container {
+  margin: 60px auto 200px;
+  width: 1100px;
+  height: 350px;
   border: 1px solid rgb(219, 224, 233);
+}
+
+.our-data__panel {
+  background: white;
+  width: calc(100% - 2 * 30px);
+  height: calc(100% - 2 * 30px);
+  margin: 30px;
 }
