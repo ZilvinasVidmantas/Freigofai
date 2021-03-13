@@ -6,6 +6,8 @@
   In many cases delaration and assignment is done one same command, for readability purpose.
   It's good pratice to declare variables before using them, despite that
     JavaScript is a loosly typed programming language.
+
+  PRO TIP: Always use 'const' keyword unless you know that value will be changed.
 */
 
 // Single declaration. This line says to computer, that keyword 'name' will be refering to memory in RAM.
@@ -46,10 +48,13 @@ const father = {
   age : 42,
 };
 // this command will cause error, because of const variable redeclaration
-const father = {
-  name: 'Some other dude',
-  surname: 'Kaspersky',
-  age: 39
-}
+// father = {
+//   name: 'Some other dude',
+//   surname: 'Kaspersky',
+//   age: 39
+// }
+
+console.log('My identity code is:', identityCode);
+console.log('My father is:', father);
 
 
