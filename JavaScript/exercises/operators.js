@@ -33,12 +33,15 @@ console.group('Naudodami vieno nario operatorius:');
 {
   console.group('6. Suformuokite skaičių 7 iš skaičių 2 ir 5');
   let x = 2;
-  x += 5;
+  x += 5; // x = x + 5 = 2 + 5 = 7;
   console.log(x);
   console.groupEnd();
 
   console.group('7. Suformuokite skaičių 2 iš skaičių 7, 6 ir 1');
-  // code...
+  let y = 7;
+  y -= 6; // y = y - 6 = 7 - 6 = 1;
+  y += 1; // y = y + 1 = 1 + 1 = 2
+  console.log(y);
   console.groupEnd();
 
   console.group('8. Suformuokite skaičių 11 iš skaičių 10, 20 ir 9');
@@ -50,11 +53,17 @@ console.group('Naudodami vieno nario operatorius:');
   console.groupEnd();
 
   console.group('9. Suformuokite skaičių 77 iš skaičių 13, 2 ir 7');
-  // code...
+  let b = 13;
+  b -= 2; // b = b - 2 = 13 - 2 = 11
+  b *= 7; // b = b * 7 = 11 * 7 = 77
+  console.log(b);
   console.groupEnd();
 
   console.group('10. Suformuokite skaičių 97 iš skaičių 5, 2 ir 51');
-  // code...
+  let c = 2;
+  c *= 51; // c = c * 51 = 2 * 51 = 102
+  c -= 5; // c = c - 5 =  102 - 5 = 97
+  console.log(c);
   console.groupEnd();
 
 }
