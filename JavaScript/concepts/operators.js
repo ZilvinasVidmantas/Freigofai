@@ -2,7 +2,7 @@ console.group('Operatoriai');
 {
   console.group('Dviejų narių operatoriai');
   {
-    let x = 4, y = 2, res;
+    let x = 16, y = 2, res;
     console.log('x:', x, 'y:', y);
     res = x + y; console.log('x + y:', res); // Sudėtis
     res = x - y; console.log('x - y:', res); // Atimtis
@@ -22,6 +22,20 @@ console.group('Operatoriai');
     console.log('++c', ++c); // Padidinti vienetu, tuomet įvykdyti komandą
     console.log('c--', c--); // Įvykdyti komandą, tuomet sumažinti vienetu
     console.log('--c', --c); // Sumažinti vienetu, tuomet įvykdyti komandą
+    {
+      console.log('c++', c);
+      c = c + 1; // c = 6
+      // -------------------------
+      c = c + 1; // c = 7
+      console.log('++c', c);
+      // -------------------------
+      console.log('c--', c);
+      c = c - 1; // c = 6
+      // -------------------------
+      c = c - 1; // c = 5
+      console.log('--c', c)
+    }
+
     c += 2; console.log('c += 2; c:', c); // Prie esamos c kintamojo vertės pridėti 2 ir priskirti į tą patį kintamajį c;
     c -= 2; console.log('c -= 2; c:', c); // Iš esamos c vertės atimti 2 ir priskirti į tą patį kintamajį c;
     c *= 2; console.log('c *= 2; c:', c); // Esamą c vertę padauginti iš 2 ir priskirti į tą patį kintamajį c;
