@@ -22,25 +22,12 @@ console.group('Operatoriai');
     console.log('++c', ++c); // Padidinti vienetu, tuomet įvykdyti komandą
     console.log('c--', c--); // Įvykdyti komandą, tuomet sumažinti vienetu
     console.log('--c', --c); // Sumažinti vienetu, tuomet įvykdyti komandą
-    {
-      console.log('c++', c);
-      c = c + 1; // c = 6
-      // -------------------------
-      c = c + 1; // c = 7
-      console.log('++c', c);
-      // -------------------------
-      console.log('c--', c);
-      c = c - 1; // c = 6
-      // -------------------------
-      c = c - 1; // c = 5
-      console.log('--c', c)
-    }
 
-    c += 2; console.log('c += 2; c:', c); // Prie esamos c kintamojo vertės pridėti 2 ir priskirti į tą patį kintamajį c;
-    c -= 2; console.log('c -= 2; c:', c); // Iš esamos c vertės atimti 2 ir priskirti į tą patį kintamajį c;
-    c *= 2; console.log('c *= 2; c:', c); // Esamą c vertę padauginti iš 2 ir priskirti į tą patį kintamajį c;
-    c /= 2; console.log('c /= 2; c:', c); // Esamą c vertę padalinti iš dviejų ir priskirti į tą patį kintamajį c;
-    c %= 2; console.log('c %= 2; c:', c); // Suskaičiuoti esamos c vertės liekaną iš 2 ir priskirti į tą patį kintamajį c;
+    c += 2; /* c = c + 2 */ console.log('c += 2; c:', c); // Prie esamos c kintamojo vertės pridėti 2 ir priskirti į tą patį kintamajį c;
+    c -= 2; /* c = c - 2 */ console.log('c -= 2; c:', c); // Iš esamos c vertės atimti 2 ir priskirti į tą patį kintamajį c;
+    c *= 2; /* c = c * 2 */ console.log('c *= 2; c:', c); // Esamą c vertę padauginti iš 2 ir priskirti į tą patį kintamajį c;
+    c /= 2; /* c = c / 2 */ console.log('c /= 2; c:', c); // Esamą c vertę padalinti iš dviejų ir priskirti į tą patį kintamajį c;
+    c %= 2; /* c = c % 2 */ console.log('c %= 2; c:', c); // Suskaičiuoti esamos c vertės liekaną iš 2 ir priskirti į tą patį kintamajį c;
   }
   console.groupEnd();
 
@@ -48,21 +35,22 @@ console.group('Operatoriai');
   {
     console.group('Lygybės ir nelygybės');
     {
-      let
+      const
         lijoUzvakar = true,
         lijoVakar = false,
         uzvakarTemp = '5',
         vakarTemp = 5,
         siandienTemp = 3;
       console.log({ lijoUzvakar, lijoVakar, uzvakarTemp, vakarTemp, siandienTemp });
-      console.log('užvakar > vakar', uzvakarTemp > vakarTemp); // Daugiau
-      console.log('užvakar >= vakar', uzvakarTemp >= vakarTemp); // Daugiau arba lygu
-      console.log('užvakar < vakar', uzvakarTemp < vakarTemp); // Mažiau
-      console.log('užvakar <= vakar', uzvakarTemp <= vakarTemp); // Mažiau arba lygu
-      console.log('užvakar == vakar', uzvakarTemp == vakarTemp); // Atlaidi lygybė, gali nesutapti duomenų tipas, bet turi sutapt reikšmė
-      console.log('užvakar === vakar', uzvakarTemp === vakarTemp); // Griežta lygybė, privalo sutapti ir duomenų tipas ir reikšmė.
+      console.log('uzvakarTemp > vakarTemp; ', `${uzvakarTemp} > ${vakarTemp}; `, uzvakarTemp > vakarTemp); // Daugiau
+      console.log('uzvakarTemp >= vakarTemp; ', `${uzvakarTemp} >= ${vakarTemp}; `, uzvakarTemp >= vakarTemp); // Daugiau arba lygu
+      console.log('uzvakarTemp < vakarTemp; ', `${uzvakarTemp} < ${vakarTemp}; `, uzvakarTemp < vakarTemp); // Mažiau
+      console.log('uzvakarTemp <= vakarTemp; ', `${uzvakarTemp} <= ${vakarTemp}; `, uzvakarTemp <= vakarTemp); // Mažiau arba lygu
+      console.log('uzvakarTemp == vakarTemp; ', `${uzvakarTemp} == ${vakarTemp}; `, uzvakarTemp == vakarTemp); // Atlaidus palyginimas, gali nesutapti duomenų tipas, bet turi sutapt reikšmė
+      console.log('uzvakarTemp === vakarTemp; ', `${uzvakarTemp} === ${vakarTemp}; `, uzvakarTemp === vakarTemp); // Griežtas palyginimas, privalo sutapti ir duomenų tipas ir reikšmė.
       console.log('lijoUzvakar', lijoUzvakar);
       console.log('!lijoUzvakar', !lijoUzvakar); // Salygos inversija
+      console.log('!!lijoUzvakar', !!lijoUzvakar); // Salygos inversija
     }
     console.groupEnd();
 
