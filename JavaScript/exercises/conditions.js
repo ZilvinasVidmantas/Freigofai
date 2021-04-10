@@ -25,11 +25,11 @@ const groceries = [
 const table = []; // put other items here
 const fridge = {
   cooler: [], // put icecream here
-  mainSection: [] // put milk products, which are not icecream
+  mainSection: [] // put milk products, which are not icecream here
 };
 
 if (groceries[0].category === 'Milk Products') {
-  if (/* condition */) {
+  if (true /* condition */) {
     // ... if condition is true
   } else {
     // ... if condition is false
