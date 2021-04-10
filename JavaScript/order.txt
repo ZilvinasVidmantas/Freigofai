@@ -1,0 +1,26 @@
+Zero to Hero guide
+Vanilla JavaScript
+  * variables
+  * operators
+  * objects
+  * arays
+  * conditions
+    * if
+    * else-if
+  * selective conditions
+    * else-if chain
+    * switch
+  * cycles
+    * while
+    * do-while
+    * for
+    * for-in
+  * functions
+  * simple alorithms
+    * search
+    * filter
+    * map
+    * sort
+  * data types
+    * 
+  * 
