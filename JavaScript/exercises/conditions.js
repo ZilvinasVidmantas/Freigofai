@@ -14,6 +14,8 @@ console.log(
   put other items on the table, I take care of them myself.`
 );
 
+// PLEASE LOOK AT THIS METHOD, FOR ADDING TO THE ARRAY
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push
 const groceries = [
   { name: 'Icecream', category: 'Milk products' },
   { name: 'Milk', category: 'Milk products' },
