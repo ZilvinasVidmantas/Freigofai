@@ -20,10 +20,10 @@ const groceries = [
   { name: 'Apples', category: 'Fruits' },
   { name: 'Bread', category: 'Grain products' },
 ];
-const table = [];
+const table = []; // put other items here
 const fridge = {
-  cooler: [],
-  mainSection: []
+  cooler: [], // put icecream here
+  mainSection: [] // put milk products, which are not icecream
 };
 
 if (groceries[0].category === 'Milk Products') {
