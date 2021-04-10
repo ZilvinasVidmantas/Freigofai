@@ -7,7 +7,7 @@ console.group('Write a short dialogue, in which "if condition" is used');
 console.groupEnd();
 
 console.group('Finish the logic')
-console.log('Grandmother: Hey Silvesr, can you please help me with the groceries?');
+console.log('Grandmother: Hey Silver, can you please help me with the groceries?');
 console.log('Silvester: Sure thing, anything for my favorite grandma!');
 console.log(
   `Grandmother: please put milk products in the fridge, if it's Icecream, put it in the cooler,
@@ -28,16 +28,12 @@ const fridge = {
   mainSection: [] // put milk products, which are not icecream here
 };
 
+// IF CODE BLOCK EXECUTED ONLY ONE COMMAND, THEN YOU CAN SKIP THE PARETHESES {}
 if (groceries[0].category === 'Milk Products') {
-  if (true /* condition */) {
-    // ... if condition is true
-  } else {
-    // ... if condition is false
-  }
+  if (groceries[0].name === 'Icecream') fridge.cooler.push(groceries[0])
+  else fridge.mainSection.push(groceries[0]);
 }
-// What if not?
-
-// Do the same testing for other 3 groceries
+else table.push(groceries[0]);
 
 // Print table, and fridge objects
 console.groupEnd();

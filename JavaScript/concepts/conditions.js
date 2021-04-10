@@ -66,3 +66,28 @@ const fridge = {
   mainSection: []
 };
 
+if (groceries[0].category === 'Milk Products') {
+  if (groceries[0].name === 'Icecream') fridge.cooler.push(groceries[0])
+  else fridge.mainSection.push(groceries[0]);
+}
+else table.push(groceries[0]);
+
+if (groceries[1].category === 'Milk Products') {
+  if (groceries[1].name === 'Icecream') fridge.cooler.push(groceries[1])
+  else fridge.mainSection.push(groceries[1]);
+}
+else table.push(groceries[0]);
+
+if (groceries[2].category === 'Milk Products') {
+  if (groceries[2].name === 'Icecream') fridge.cooler.push(groceries[2])
+  else fridge.mainSection.push(groceries[2]);
+}
+else table.push(groceries[0]);
+
+if (groceries[3].category === 'Milk Products') {
+  if (groceries[3].name === 'Icecream') fridge.cooler.push(groceries[3])
+  else fridge.mainSection.push(groceries[3]);
+}
+else table.push(groceries[0]);
+
+
