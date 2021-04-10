@@ -26,5 +26,16 @@ const fridge = {
   mainSection: []
 };
 
-// code...
+if (groceries[0].category === 'Milk Products') {
+  if (/* condition */) {
+    // ... if condition is true
+  } else {
+    // ... if condition is false
+  }
+}
+// What if not?
+
+// Do the same testing for other 3 groceries
+
+// Print table, and fridge objects
 console.groupEnd();
