@@ -17,23 +17,49 @@ console.log(
 // PLEASE LOOK AT THIS METHOD, FOR ADDING TO THE ARRAY
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push
 const groceries = [
-  { name: 'Icecream', category: 'Milk products' },
-  { name: 'Milk', category: 'Milk products' },
-  { name: 'Apples', category: 'Fruits' },
-  { name: 'Bread', category: 'Grain products' },
+  {  // ------------------------------------------------
+    name: 'Icecream',  // groceries[0].name             |  groceries[0]
+    category: 'Milk products' // groceries[0].category  |
+  }, // ------------------------------------------------
+  { name: 'Milk', category: 'Milk products' },  // groceries[1]
+  { name: 'Apples', category: 'Fruits' }, // groceries[2]
+  { name: 'Bread', category: 'Grain products' }, // groceries[3]
 ];
 const table = []; // put other items here
 const fridge = {
-  cooler: [], // put icecream here
-  mainSection: [] // put milk products, which are not icecream here
+  cooler: [], // fridge.cooler
+  mainSection: [] // fridge.mainSection
 };
 
-// IF CODE BLOCK EXECUTED ONLY ONE COMMAND, THEN YOU CAN SKIP THE PARETHESES {}
+
 if (groceries[0].category === 'Milk Products') {
   if (groceries[0].name === 'Icecream') fridge.cooler.push(groceries[0])
   else fridge.mainSection.push(groceries[0]);
 }
 else table.push(groceries[0]);
 
+if (groceries[1].category === 'Milk Products') {
+  if (groceries[1].name === 'Icecream') fridge.cooler.push(groceries[1])
+  else fridge.mainSection.push(groceries[1]);
+}
+else table.push(groceries[0]);
+
+if (groceries[2].category === 'Milk Products') {
+  if (groceries[2].name === 'Icecream') fridge.cooler.push(groceries[2])
+  else fridge.mainSection.push(groceries[2]);
+}
+else table.push(groceries[0]);
+
+if (groceries[3].category === 'Milk Products') {
+  if (groceries[3].name === 'Icecream') fridge.cooler.push(groceries[3])
+  else fridge.mainSection.push(groceries[3]);
+}
+else table.push(groceries[0]);
+
+
 // Print table, and fridge objects
+console.log({
+  table,
+  fridge
+})
 console.groupEnd();

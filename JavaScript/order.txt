@@ -1,26 +1,45 @@
 Zero to Hero guide
-Vanilla JavaScript
-  * variables
-  * operators
-  * objects
-  * arays
-  * conditions
-    * if
-    * else-if
-  * selective conditions
-    * else-if chain
-    * switch
-  * cycles
-    * while
-    * do-while
-    * for
-    * for-in
-  * functions
-  * simple alorithms
-    * search
-    * filter
-    * map
-    * sort
-  * data types
-    * 
-  * 
+  Vanilla JavaScript
+    * variables
+    * operators
+    * objects
+    * arays
+    * conditions
+      * if
+      * else-if
+    * selective conditions
+      * else-if chain
+      * switch
+    * cycles
+      * while
+      * do-while
+      * for
+      * for-in
+      * for-of
+    * simple functions
+    * simple alorithms
+      * LIFO, FILO
+      * search
+      * swap
+      * min and max
+      * filter
+      * map
+      * sort
+    * data types
+      * primitive vs reference types
+      * let VS var VS const
+    * variable value cloning
+      * deep
+      * shallow
+    * higher order functions
+    * Array methods
+    * prototypes
+    * lambda expression vs function
+    * sync VS async
+    * class sugar syntax
+    * static properties
+    * Object descriptors
+    * OOP principles
+      * Inheritance
+      * 
+
