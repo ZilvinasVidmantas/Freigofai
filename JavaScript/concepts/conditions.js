@@ -93,6 +93,6 @@ else table.push(groceries[3]);
 console.log({
   table,
   fridge
-})
+});
 
 

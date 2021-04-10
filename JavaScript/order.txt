@@ -39,7 +39,4 @@ Zero to Hero guide
     * class sugar syntax
     * static properties
     * Object descriptors
-    * OOP principles
-      * Inheritance
-      * 
 
