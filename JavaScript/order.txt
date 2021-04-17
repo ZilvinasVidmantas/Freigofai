@@ -1,4 +1,5 @@
 Zero to Hero guide
+
   Vanilla JavaScript
     * variables
     * operators
@@ -35,8 +36,12 @@ Zero to Hero guide
     * Array methods
     * prototypes
     * lambda expression vs function
-    * sync VS async
     * class sugar syntax
     * static properties
-    * Object descriptors
+    * Object.prototype descriptors
+
+  Node 
+    * modularity
+    * 
+
 

@@ -17,8 +17,19 @@ const jessica = {
   oranges: 7, // this can be any number
 };
 
-// code...
+if (samuel.apples !== jessica.apples) {
+  const equalAmountOfApples = (samuel.apples + jessica.apples) / 2;
+  samuel.apples = equalAmountOfApples;
+  jessica.apples = equalAmountOfApples;
+}
 
+if (samuel.oranges !== jessica.oranges) {
+  const equalAmountOfOranges = (samuel.oranges + jessica.oranges) / 2;
+  samuel.oranges = equalAmountOfOranges;
+  jessica.oranges = equalAmountOfOranges;
+}
+
+console.log({jessica, samuel})
 if (samuel.apples === jessica.apples && samuel.oranges === jessica.oranges) {
   console.log('Congratz, you are smart!');
 } else {
