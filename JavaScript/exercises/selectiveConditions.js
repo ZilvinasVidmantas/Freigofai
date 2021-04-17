@@ -2,6 +2,7 @@ console.group('1. Create else-if selective block to say a greeting based on the 
 {
   const now = new Date();
   const hour = now.getHours();
+  console.log(hour);
   // ...code
 }
 console.groupEnd();
@@ -71,7 +72,26 @@ const allApples = [{
 console.group('2. Create an switch block to place apples in diferent arrays based on their type');
 const redLoveApples = [];
 const ambrosiaApples = [];
-// ... code
+const opalApples = [];
+const goldenApples = [];
+const cortlandApples = [];
+
+allApples.forEach(oneApple => {
+  switch (oneApple.type) {
+    case 'Red love': redLoveApples.push(oneApple); break;
+    case 'Ambrosia': ambrosiaApples.push(oneApple); break;
+    case 'Opal': opalApples.push(oneApple); break;
+    case 'Golden': goldenApples.push(oneApple); break;
+    case 'Cortland': cortlandApples.push(oneApple); break;
+  }
+});
+console.log({
+  redLoveApples,
+  ambrosiaApples,
+  opalApples,
+  goldenApples,
+  cortlandApples
+});
 console.groupEnd();
 
 console.group('3. Create an switch block to count their total weight based on their type');
