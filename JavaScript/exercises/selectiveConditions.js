@@ -75,8 +75,8 @@ const ambrosiaApples = [];
 console.groupEnd();
 
 console.group('3. Create an switch block to count their total weight based on their type');
-let redLoveAppleWeight = 0;
-let ambrosiaAppleWeight = 0;
+let redLoveApplesWeight = 0;
+let ambrosiaApplesWeight = 0;
 // ... code
 console.groupEnd();
 
