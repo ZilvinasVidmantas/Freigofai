@@ -2,8 +2,12 @@ console.group('1. Create else-if selective block to say a greeting based on the 
 {
   const now = new Date();
   const hour = now.getHours();
-  console.log(hour);
-  // ...code
+  if (hour < 5) console.log('Good midnight');
+  else if (hour < 10) console.log('Good morgning');
+  else if (hour < 17) console.log('Good day');
+  else if (hour < 22) console.log('Good evening');
+  else console.log('Good night');
+
 }
 console.groupEnd();
 
@@ -103,6 +107,7 @@ let cortlandApplesWeight = 0;
 allApples.forEach(oneApple => {
   switch (oneApple.type) {
     case 'Red love': redLoveApplesWeight += oneApple.weight; break;
+    // case 'Red love': redLoveApplesWeight = redLoveApplesWeight + oneApple.weight; break;
     case 'Ambrosia': ambrosiaApplesWeight += oneApple.weight; break;
     case 'Opal': opalApplesWeight += oneApple.weight; break;
     case 'Golden': goldenApplesWeight += oneApple.weight; break;
@@ -115,11 +120,58 @@ console.log({
   opalApplesWeight,
   goldenApplesWeight,
   cortlandApplesWeight
-})
+});
 console.groupEnd();
 
 console.group('4. Create an switch block to calculate average weight of each apple type');
-
-// ... code
+{
+  let redLoveApplesWeight = 0;
+  let ambrosiaApplesWeight = 0;
+  let opalApplesWeight = 0;
+  let goldenApplesWeight = 0;
+  let cortlandApplesWeight = 0;
+  
+  let redLoveApplesCount = 0;
+  let ambrosiaApplesCount = 0;
+  let opalApplesCount = 0;
+  let goldenApplesCount = 0;
+  let cortlandApplesCount = 0;
+  allApples.forEach(oneApple => {
+    switch (oneApple.type) {
+      case 'Red love':
+        redLoveApplesWeight += oneApple.weight;
+        redLoveApplesCount++;
+        break;
+      case 'Ambrosia':
+        ambrosiaApplesWeight += oneApple.weight;
+        ambrosiaApplesCount++;
+        break;
+      case 'Opal':
+        opalApplesWeight += oneApple.weight;
+        opalApplesCount++;
+        break;
+      case 'Golden':
+        goldenApplesWeight += oneApple.weight;
+        goldenApplesCount++;
+        break;
+      case 'Cortland':
+        cortlandApplesWeight += oneApple.weight;
+        cortlandApplesCount++;
+        break;
+    }
+  });
+  const redLoveApplesAvg = redLoveApplesWeight / redLoveApplesCount;
+  const ambrosiaApplesAvg = ambrosiaApplesWeight / ambrosiaApplesCount;
+  const opalApplesAvg = opalApplesWeight / opalApplesCount;
+  const goldenApplesAvg = goldenApplesWeight / goldenApplesCount;
+  const cortlandApplesAvg = cortlandApplesWeight / cortlandApplesCount;
+  console.log({
+    redLoveApplesAvg,
+    ambrosiaApplesAvg,
+    opalApplesAvg,
+    goldenApplesAvg,
+    cortlandApplesAvg
+  })
+}
 console.groupEnd();
 
