@@ -97,7 +97,25 @@ console.groupEnd();
 console.group('3. Create an switch block to count their total weight based on their type');
 let redLoveApplesWeight = 0;
 let ambrosiaApplesWeight = 0;
-// ... code
+let opalApplesWeight = 0;
+let goldenApplesWeight = 0;
+let cortlandApplesWeight = 0;
+allApples.forEach(oneApple => {
+  switch (oneApple.type) {
+    case 'Red love': redLoveApplesWeight += oneApple.weight; break;
+    case 'Ambrosia': ambrosiaApplesWeight += oneApple.weight; break;
+    case 'Opal': opalApplesWeight += oneApple.weight; break;
+    case 'Golden': goldenApplesWeight += oneApple.weight; break;
+    case 'Cortland': cortlandApplesWeight += oneApple.weight; break;
+  }
+});
+console.log({
+  redLoveApplesWeight,
+  ambrosiaApplesWeight,
+  opalApplesWeight,
+  goldenApplesWeight,
+  cortlandApplesWeight
+})
 console.groupEnd();
 
 console.group('4. Create an switch block to calculate average weight of each apple type');
