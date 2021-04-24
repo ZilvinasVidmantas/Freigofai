@@ -9,17 +9,20 @@
   If you will not fallow these steps, your cycle can be infinite, resulting in a program crash.
  */
 // Example:
+console.group('Simple iteration with "while" cycle');
 let i = 0; // this is a 'worker' variable, which must participate in the condition
 //       ↙ - this is condition, which is tested before every iteration
-while(i < 10){
+while (i < 10) {
   console.log('The worker variable is:', i);
   // This parts is crucial! we change 'worker'(step) variable which alters the condition so, 
   // that it aproaches final condition 
   // in this case final condition is: "while(10 < 10)" → results in → false
-  
+
   i++; // step
 }
 console.log('Cycle ended. Worker variable is:', i);
+console.groupEnd();
+console.log();
 /*
   Termynology:
     iterator - cycle's 'worker' variable.
@@ -34,3 +37,25 @@ console.log('Cycle ended. Worker variable is:', i);
       break - terminate cycle's proccess, and does not check the condition
       continue - stops cycle's current single iteration, and checks the condition for further execution
 */
+console.group('"break" example');
+let m = 0;
+while (true) {
+  if (m > 10) break;
+  console.log(m++);
+}
+console.log('Cycle ended. Worker variable is:', m);
+console.groupEnd();
+console.log();
+
+console.group('"continue" example');
+let v = 0;
+while (v < 11) {
+  if (v % 2 !== 0) {
+    v++;
+    continue;
+  }
+  console.log(v++);
+}
+console.log('Cycle ended. Worker variable is:', m);
+console.groupEnd();
+console.log();
