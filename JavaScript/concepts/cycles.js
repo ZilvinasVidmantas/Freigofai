@@ -70,8 +70,46 @@ console.log();
 
 console.group('"for cycle" example');
 //        ↙ 1.    ↙ 2.   ↙ 3.
-for(let i = 1; i <= 10; i++){
+for (let i = 1; i <= 10; i++) {
   console.log('iterator:', i)
 }
+console.groupEnd();
+console.log();
+
+/*
+  Cycles are core tools of all algorithms. Most commonly used is iteration thourgh every element of an array
+    arr.length - is array property which tells us how many elements is in an array.
+    By using the arr.length value we can write condition so, that cycle stops, when is
+      iterator reached same value as the arr.length value.
+    Because array elements are indexed from 0, we initialize the iterator as value 0.
+    That way we will always iterate through every array element despite the element count.
+    This might seem like magic, but it is just a synonym for cleverness :)
+*/
+const numbers = [1, 3, 5, -6, 7, 9]; // Feel free to change array elements, and their count
+console.group('Printing array elements with "for cycle"');
+for (let i = 0; i < numbers.length; i++) {
+  console.log(`iterator: ${i}; array value by iterator index, numbers[${i}]: ${numbers[i]}`);
+}
+console.groupEnd();
+console.log();
+/*
+  Well, iterating thourgh arrays opens a lot of algorythms, for instance, the sum of all array elements:
+*/
+console.group('Sum of "numbers"');
+let sum = 0;
+for (let i = 0; i < numbers.length; i++) {
+  sum += numbers[i];
+}
+console.log('sum:', sum);
+console.groupEnd();
+console.log();
+
+console.group('Average of "numbers"');
+let total = 0;
+for (let i = 0; i < numbers.length; i++) {
+  total += numbers[i];
+}
+const avg = total / numbers.length;
+console.log('avg:', avg);
 console.groupEnd();
 console.log();
