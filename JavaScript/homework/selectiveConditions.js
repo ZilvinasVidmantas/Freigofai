@@ -21,19 +21,26 @@ console.group('4. Create else-if selective conditions to console.log comment abo
 console.groupEnd();
 
 const person = {
-  name: 'Silver', // Ann, Hamulatakin, Jesicalimanora
+  name: 'Jacob', // Ann, Hamulatakin, Jesicalimanora
   weight: 90, // 60, 90, 120, 150
   height: 160, // 180, 190, 200, 210, 220
 };
 console.group('5. Create else-if selective conditions to console.log comment about <person> name length');
-// ... code
-console.group();
+console.log('name length:', person.name.length)
+if (person.name.length < 5) {
+  console.log('You got a cool short name!')
+} else if (person.name.length < 8) {
+  console.log('Handsome letters in the name, mate!')
+} else {
+  console.log('Not a short name you have dare, sir.')
+}
+console.groupEnd();
 console.group('6. Create else-if selective conditions to console.log comment about <person> name weight');
 // ... code
-console.group();
+console.groupEnd();
 console.group('7. Create else-if selective conditions to console.log comment about <person> name height');
 // ... code
-console.group();
+console.groupEnd();
 console.group('8. Create else-if selective conditions to console.log comment about <person> name BMI index');
 // ... code
-console.group();
+console.groupEnd();
