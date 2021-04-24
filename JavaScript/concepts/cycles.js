@@ -59,3 +59,19 @@ while (v < 11) {
 console.log('Cycle ended. Worker variable is:', m);
 console.groupEnd();
 console.log();
+
+// You can always use while cycle, but there other cycles types
+// Most famous one is "for cycle".
+// It is more commonly used becouse it has it's one scope, and has implementation of all cycle requirements:
+//  1. initial iterator(worker variable) value assignment 
+//  2. cycle's contition
+//  3. step (which approches final condition)
+// for( [1.]; [2.]; [3.]) {... iteration code ...}
+
+console.group('"for cycle" example');
+//        ↙ 1.    ↙ 2.   ↙ 3.
+for(let i = 1; i <= 10; i++){
+  console.log('iterator:', i)
+}
+console.groupEnd();
+console.log();
