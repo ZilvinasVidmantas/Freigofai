@@ -1,3 +1,6 @@
+// sum: https://www.youtube.com/watch?v=7C98Yt4egoE&ab_channel=ProgramCode
+// average: youtube.com/watch?v=QgUnJhUTGoI&ab_channel=CalebCurry
+// 
 const cars = [{
   brand: 'Opel',
   model: 'Astra',
