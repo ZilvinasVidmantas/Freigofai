@@ -47,7 +47,7 @@ else {
   For example:
 */
 
-console.log('Grandmother: Hey Silvesr, can you please help me with the groceries?');
+console.log('Grandmother: Hey Silver, can you please help me with the groceries?');
 console.log('Silvester: Sure thing, anything for my favorite grandma!');
 console.log(
   `Grandmother: please put milk products in the fridge, if it's icecream, put it in the cooler,

@@ -13,7 +13,7 @@
 // Single declaration. This line says to computer, that keyword 'name' will be refering to memory in RAM.
 let fullName;
 
-// Multiple declaration. You can declara multiple vatiables with one line.
+// Multiple declaration. You can declara multiple variables with one line.
 let age, height, weight;
 
 // Assignment. The memory alocated by variable name will be set to value writen after equal signs:

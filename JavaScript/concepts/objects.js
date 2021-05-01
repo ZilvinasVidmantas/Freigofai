@@ -45,7 +45,7 @@ console.group('Objects');
   {
     /*
       Properties are changed using '=' operator, similary like assigning variables.
-      If we try to assing a property value by not existing property name it created a new property
+      If we try to assing a property value by not existing property name it creates a new property
       If property name already exists in the object, it simply rewrites the value
     */
 
