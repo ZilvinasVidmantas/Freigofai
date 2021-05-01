@@ -53,32 +53,57 @@ const people2 = [{
 // Please do these exercises and execute them using <people1> and <people2> arrays
 
 console.group('1. Write a function, that takes people array and PRINTS their fullnames');
-// ...code
+function printFullNames(people) {
+  for (let i = 0; i < people.length; i++) {
+    console.log(people[i].name, people[i].surname);
+  }
+}
+
+console.group('people1 fullnames');
+printFullNames(people1);
 console.groupEnd();
 console.log();
+
+console.group('people2 fullnames');
+printFullNames(people2);
+console.groupEnd();
+
+console.groupEnd();
+console.log();
+// ----------------------------------------------------------------------------------------
 
 console.group('2. Write a function, that takes people array and PRINTS their age average');
 // ...code
 console.groupEnd();
 console.log();
+// ----------------------------------------------------------------------------------------
+
 
 console.group('3. Write a function, that takes people array and PRINTS married people count');
 // ...code
 console.groupEnd();
 console.log();
+// ----------------------------------------------------------------------------------------
+
 
 console.group('4. Write a function, that takes people array and RETUNRS married people count');
 // ...code
 console.groupEnd();
 console.log();
+// ----------------------------------------------------------------------------------------
+
 
 console.group('5. Write a function, that takes people array and RETUNRS children count');
 // ...code
 console.groupEnd();
 console.log();
+// ----------------------------------------------------------------------------------------
+
 
 console.group('6. Write a function, that takes people array and RETUNRS senior count');
 // ...code
 console.groupEnd();
 console.log();
+// ----------------------------------------------------------------------------------------
+
 
