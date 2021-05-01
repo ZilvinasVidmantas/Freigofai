@@ -10,13 +10,11 @@ console.group("1.1 triple(7)");
 const res1 = triple(7);
 console.log(res1);
 console.groupEnd();
-console.log();
 
-console.group("1.1 triple(3)");
+console.group("1.2 triple(3)");
 const z = 3;
-çonsole.log(triple(z));
+console.log(triple(z));
 console.groupEnd();
-console.log();
 
 console.groupEnd();
 console.log();
@@ -94,7 +92,7 @@ console.groupEnd();
 console.log();
 // -----------------------------------------------------------------------------------------
 
-console.group("14. Create function which takes an array and returns bigest value in the array.");
+console.group("14. Create function which takes an array and returns biggest value in the array.");
 // ... code
 console.groupEnd();
 console.log();
