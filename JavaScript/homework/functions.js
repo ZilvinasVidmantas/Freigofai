@@ -74,7 +74,7 @@ console.groupEnd();
 console.log();
 // -----------------------------------------------------------------------------------------
 
-console.group("11. Create function which takes an array and print values in this format:  [0] => 64.  ");
+console.group("11. Create function which takes an array and print values in this format: [0] => 64.  ");
 // ... code
 console.groupEnd();
 console.log();

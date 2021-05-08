@@ -78,32 +78,61 @@ console.groupEnd();
 console.log();
 // ----------------------------------------------------------------------------------------
 
-
 console.group('3. Write a function, that takes people array and PRINTS married people count');
 // ...code
 console.groupEnd();
 console.log();
 // ----------------------------------------------------------------------------------------
 
-
 console.group('4. Write a function, that takes people array and RETUNRS married people count');
-// ...code
+function countMarriedPeople(people) {
+  let count = 0;
+  for (let i = 0; i < people.length; i++) {
+    if (people[i].married) count++;
+  }
+  return count;
+}
+const people1MarriedPeopleCount = countMarriedPeople(people1);
+
+console.log({
+  people1MarriedPeopleCount,
+  people2MarriedPeopleCount: countMarriedPeople(people2)
+});
+
 console.groupEnd();
 console.log();
 // ----------------------------------------------------------------------------------------
-
 
 console.group('5. Write a function, that takes people array and RETUNRS children count');
-// ...code
+function countChldrenPeople(people) {
+  let count = 0;
+  for (let i = 0; i < people.length; i++) {
+    if (people[i].age < 18) count++;
+  }
+  return count;
+}
+
+console.log({
+  people1ChildrenCount: countChldrenPeople(people1),
+  people2ChildrenCount: countChldrenPeople(people2),
+});
 console.groupEnd();
 console.log();
 // ----------------------------------------------------------------------------------------
-
 
 console.group('6. Write a function, that takes people array and RETUNRS senior count');
-// ...code
+function countSeniors(people) {
+  let count = 0;
+  for (let i = 0; i < people.length; i++) {
+    if (people[i].age >= 65) count++;
+  }
+  return count;
+}
+
+console.log({
+  people1SeniorCount: countSeniors(people1),
+  people2SeniorCount: countSeniors(people2),
+});
 console.groupEnd();
 console.log();
 // ----------------------------------------------------------------------------------------
-
-
