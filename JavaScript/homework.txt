@@ -1,0 +1,6 @@
+5 very easy conditions
+5 very easy math
+2 very easy arrays
+2 very easy objects
+2 very easy loops
+2 very easy strings
