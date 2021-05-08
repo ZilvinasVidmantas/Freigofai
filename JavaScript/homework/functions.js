@@ -93,13 +93,39 @@ console.log();
 // -----------------------------------------------------------------------------------------
 
 console.group("14. Create function which takes an array and returns biggest value in the array.");
-// ... code
+const numbers1 = [1, -8, 9, -6, -9, 8, 7];
+const numbers2 = [-112, -54, -66, -32, -47, -9];
+function max(arr) {
+  let max = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+    }
+  }
+  return max;
+}
+console.log({
+  ['Max in: ' + JSON.stringify(numbers1)]: max(numbers1),
+  ['Max in: ' + JSON.stringify(numbers2)]: max(numbers2),
+});
 console.groupEnd();
 console.log();
 // -----------------------------------------------------------------------------------------
 
 console.group("15. Create function which takes an array and returns smallest value in the array.");
-// ... code
+function min(arr) {
+  let min = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] < min) {
+      min = arr[i];
+    }
+  }
+  return min;
+}
+console.log({
+  ['Min in: ' + JSON.stringify(numbers1)]: min(numbers1),
+  ['Min in: ' + JSON.stringify(numbers2)]: min(numbers2),
+});
 console.groupEnd();
 console.log();
 // -----------------------------------------------------------------------------------------
