@@ -1,6 +1,8 @@
-5 very easy conditions
-5 very easy math
-2 very easy arrays
-2 very easy objects
-2 very easy loops
-2 very easy strings
+1. Analyze  image: 'primitive vs reference.png'
+2. Analyze file: 'exercises\easy-conditions.js'
+3. watch video: https://www.youtube.com/watch?v=9ooYYRLdg_g
+4. watch video: https://www.youtube.com/watch?v=5AWRivBk0Gw&ab_channel=WebDevSimplifiedWebDevSimplified
+5. watch video: https://www.youtube.com/watch?v=T-HGdc8L-7w&ab_channel=TheCodingTrainTheCodingTrainPatvirtinta
+6. talk with brothers, share thoughts
+  6.1. Why should you use classes?
+  6.2. Why is it usefull?
