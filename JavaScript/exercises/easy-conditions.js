@@ -23,7 +23,6 @@ class Person {
   sayYourName() {
     console.log('My name is ' + this.name);
   }
-
 }
 // new - is a new memory space (new object)
 // new keybword is used when crating class objects (class instances)
