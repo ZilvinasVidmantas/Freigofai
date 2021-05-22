@@ -1,7 +1,7 @@
 Analyse video,
-and draw "cycle in a cycle" algorythm by and on paper
-with diferent colors, better than my example
+and draw "cycle in a cycle" algorythm on paper
+with diferent colors, better than my example with paint
 
 Then send image to:
 zilvinas.vidmantas.93@gmail.com 
-ate least 1 hour before lesson
+at least 1 hour before lesson
